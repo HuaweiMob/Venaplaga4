@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Фотография Владивосток Nikon Leica Xmage">
+    <meta name="Keywords" content="Фотограф Владивосток">
     <title>Venaplaga4</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/snow.css"> <!-- Подключение стилей снежинок -->
+    <link rel="shortcut icon" href="./img/camera.png">
 </head>
 <body>
-    <nav class="nav">
+     <nav class="nav"> <!-- Навигация -->
         <div class="container">
             <div class="nav-row">
                 <a href="./index.html" class="logo"><strong>Venaplaga4</strong></a>
@@ -25,7 +28,7 @@
         </div>
     </nav>
 
-    <header class="header">
+    <header class="header"> <!-- Блок с видео -->
         <video class="header__video" autoplay loop muted playsinline>
             <source src="./img/snowe.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -38,59 +41,147 @@
             <div class="header__text">
                 <p>Я могу показать тебе красоту в этом мире</p>
             </div>
-            <a href="https://wa.me/79502925044" class="btn">Записаться</a>
+            <a href="#" class="btn">Записаться</a>
         </div>
     </header>
 
-    <main class="section">
+    <!-- Диалоговое окно -->
+    <div id="dialog" class="dialog none">
+        <div class="dialog-content">
+            <h3>Выберите вид съёмки:</h3>
+            <ul class="shooting-types">
+                <li>
+                    <h4>Портретная съёмка</h4>
+                    <p>Индивидуальная фотосессия в студии или на природе, подчеркивающая индивидуальность.</p>
+                    <button class="btn small-btn">Записаться</button>
+                </li>
+                <li>
+                    <h4>Семейная съёмка</h4>
+                    <p>Теплые фотографии с вашими близкими, запечатленные в непринужденной атмосфере.</p>
+                    <button class="btn small-btn">Записаться</button>
+                </li>
+                <li>
+                    <h4>Свадебная съёмка</h4>
+                    <p>Сохраните самые важные моменты вашего особенного дня с помощью профессиональной фотосъемки.</p>
+                    <button class="btn small-btn">Записаться</button>
+                </li>
+            </ul>
+            <p class="price-info">
+                <strong>Обратите внимание:</strong> Цена за фотосессию обговаривается индивидуально, так как она зависит от времени, количества фотографий, места и прочих обстоятельств.
+            </p>
+            <button class="btn close-dialog">Закрыть</button>
+        </div>
+    </div>
+
+
+    <main class="section"> <!-- Работы -->
         <div class="container">
             <h2 class="title-1">Мои работы</h2>
             <ul class="projects">
                 <li class="project">
                     <a href="./project-page.html">
-                        <img src="./img/projects/01.jpg" alt="Project img" class="project__img">
+                        <img src="./img/projects/01.jpg" alt="Фотография со съемок с Ольгой" class="project__img">
                         <h3 class="project__title"></h3>
                     </a>
                 </li>
                 <li class="project">
                     <a href="./project-page.html">
-                        <img src="./img/projects/02.jpg" alt="Project img" class="project__img">
+                        <img src="./img/projects/02.jpg" alt="Фотография со съемок с Екатериной" class="project__img">
                         <h3 class="project__title"></h3>
                     </a>
                 </li>
                 <li class="project">
                     <a href="./project-page.html">
-                        <img src="./img/projects/06.jpg" alt="Project img" class="project__img">
+                        <img src="./img/projects/06.jpg" alt="Фотография со съемок с Анастасией" class="project__img">
                         <h3 class="project__title"></h3>
                     </a>
                 </li>
-        
                 <li class="project">
-                    <img src="./img/projects/03.jpg" alt="Project img" class="project__img">
+                    <img src="./img/projects/IMG_20241219_222333_167.jpg" alt="Фотография со съемок с Екатериной море" class="project__img">
                     <h3 class="project__title"></h3>
                 </li>
                 <li class="project">
-                    <img src="./img/projects/04.JPG" alt="Project img" class="project__img">
+                    <img src="./img/projects/IMG_20241219_221940_038.jpg" alt="Фотография со съемок с Екатериной море" class="project__img">
+                    <h3 class="project__title"></h3>
+                </li>
+                <li class="project">
+                    <img src="./img/projects/IMG_20241219_221940_337.jpg" alt="Фотография со съемок с Екатериной море" class="project__img">
+                    <h3 class="project__title"></h3>
+                </li>
+                <li class="project">
+                    <img src="./img/projects/IMG_20241219_222225_950.jpg" alt="Фотография со съемок с Екатериной море" class="project__img">
+                    <h3 class="project__title"></h3>
+                </li>
+                <li class="project">
+                    <img src="./img/projects/IMG_20241219_223041_481.jpg" alt="Фотография со съемок с Екатериной море" class="project__img">
+                    <h3 class="project__title"></h3>
+                </li>
+                <li class="project">
+                    <img src="./img/projects/IMG_0906.jpeg" alt="Фотография со съемок с Екатериной море" class="project__img">
+                    <h3 class="project__title"></h3>
+                </li>
+                <li class="project">
+                    <img src="./img/projects/03.jpg" alt="Фотография со съемок с Олесей" class="project__img">
+                    <h3 class="project__title"></h3>
+                </li>
+                <li class="project">
+                    <img src="./img/projects/04.JPG" alt="Фотография со съемок с Екатериной море" class="project__img">
                     <h3 class="project__title"></h3>
                 </li>
                 <li class="project" id="k">
-                    <img src="./img/projects/05.JPG" alt="Project img" class="project__img">
+                    <img src="./img/projects/05.JPG" alt="Фотография со съемок с Екатериной море" class="project__img">
                     <h3 class="project__title"></h3>
                 </li>
-        
+                <li class="project">
+                    <img src="./img/projects/CN6XTHvLMQg.jpg" alt="Фотография со съемок с Олесей" class="project__img">
+                    <h3 class="project__title"></h3>
+                </li>
+                <li class="project">
+                    <img src="./img/projects/Crm3vB1VNtQ.jpg" alt="Фотография со съемок с Екатериной море" class="project__img">
+                    <h3 class="project__title"></h3>
+                </li>
+                <li class="project" id="k">
+                    <img src="./img/projects/kUr4jX6t6OI.jpg" alt="Фотография со съемок с Екатериной море" class="project__img">
+                    <h3 class="project__title"></h3>
+                </li>
             </ul>
         </div>
-        </main>
+    </main>
+    <main class="section"> <!-- Работы -->
+        <div class="container">
+            <h2 class="title-1">Свадебные фотосессии</h2>
+            <ul class="projects">
+                <li class="project">
+                    <a href="./project-page.html">
+                        <img src="./img/projects/malan1.jpg" alt="Фотография со съемок с Ольгой" class="project__img">
+                        <h3 class="project__title"></h3>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="./project-page.html">
+                        <img src="./img/projects/malan2.jpg" alt="Фотография со съемок с Екатериной" class="project__img">
+                        <h3 class="project__title"></h3>
+                    </a>
+                </li>
+                <li class="project">
+                    <a href="./project-page.html">
+                        <img src="./img/projects/malan3.jpg" alt="Фотография со съемок с Анастасией" class="project__img">
+                        <h3 class="project__title"></h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
 
-    <footer class="footer">
+    <footer class="footer"> <!-- Подвал -->
         <div class="container">
             <div class="footer__wrapper">
                 <ul class="social">
                     <li class="social__item"><a href="https://vk.com/ssd06"><img src="./img/icons/vk.svg" alt="Link"></a></li>
                     <li class="social__item"><a href="https://www.instagram.com/venaplaga4/"><img src="./img/icons/instagram.svg" alt="Link"></a></li>
                     <li class="social__item"><a href="https://github.com/HuaweiMob"><img src="./img/icons/gitHub.svg" alt="Link"></a></li>
+                    <li class="social__item" id="Telegram"><a href="https://t.me/Venaplaga4"><img src="./img/icons/telegram2.svg" alt="Link"></a></li>
                 </ul>
-                
             </div>
         </div>
     </footer>

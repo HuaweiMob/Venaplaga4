@@ -547,7 +547,7 @@ html, body {
     }
 
     .social__item {
-        width: 28px;
+        width: 200px;
     }
 
 }
@@ -605,4 +605,118 @@ html, body {
         width: 100%; /* Фото растягивается на всю ширину */
         max-width: none; /* Убираем ограничение ширины */
     }
+}
+#Telegram {
+    width: 48px; /* Размер иконки */
+    height: 48px; /* Размер иконки */
+    display: inline-flex; /* Делаем иконку гибким элементом */
+    justify-content: center; /* Выравнивание по центру горизонтально */
+    align-items: center; /* Выравнивание по центру вертикально */
+}
+
+#Telegram img {
+    width: 100%; /* Иконка занимает весь контейнер */
+    height: 100%; /* Иконка занимает весь контейнер */
+    filter: invert(1); /* Делаем изображение белым (инвертируем цвет) */
+}
+.dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.dialog-content {
+    background: var(--page-bg);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+.dialog-content h3 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.shooting-types {
+    display: flex; /* Включаем flexbox */
+    justify-content: space-between; /* Равномерно распределяем элементы */
+    gap: 20px; /* Расстояние между элементами */
+    flex-wrap: wrap; /* При необходимости элементы могут переноситься на следующую строку */
+}
+
+.shooting-types li {
+    flex: 1; /* Каждый элемент будет занимать одинаковую ширину */
+    background: var(--page-bg); /* Фоновый цвет для элементов списка */
+    border-radius: 8px; /* Скругленные углы */
+    padding: 15px; /* Внутренний отступ */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для создания глубины */
+    transition: transform 0.3s, box-shadow 0.3s; /* Анимации для эффекта наведения */
+}
+
+.shooting-types li:hover {
+    transform: translateY(-5px); /* Эффект поднятия при наведении */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Увеличенная тень */
+}
+
+.shooting-types h4 {
+    margin-bottom: 10px; /* Отступ снизу для заголовка */
+    font-size: 1.2rem; /* Размер шрифта */
+    color: #94db92;;
+}
+
+.shooting-types p {
+    font-size: 1rem; /* Размер шрифта */
+    color: var(--accent);
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+.shooting-types button {
+    background-color: #5C62EC; /* Цвет кнопки */
+    color: #fff; /* Цвет текста на кнопке */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Плавное изменение фона при наведении */
+}
+
+.shooting-types button:hover {
+    background-color: #434aa8; /* Цвет кнопки при наведении */
+}
+
+.small-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    background-color: var(--accent);
+    color: var(--white);
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.small-btn:hover {
+    background-color: var(--hover-color);
+}
+
+.none {
+    display: none !important;
+}
+.close-dialog{
+    transform: translate(0, 50%);
+}
+.price-info {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
 }
